@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {font-family: "Times New Roman", Georgia, Serif;}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+}
+h2{
+    font-size: 40px;
+}
+
+
+.carousel-inner img {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(50%); /* make all photos black and white */ 
+    width: 100%; /* Set width to 100% */
+    height: 100%;
+    margin: auto;
+}
+.bg-text-home {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    font-size: 80px;
+    border: 10px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: auto;
+    padding: 20px;
+    text-align: center;
+  }
+.container-fluid {
+    padding: 60px 50px;
+}
+.bg-Col{
+    background-color: black;
+  }
+.bg-grey {
+    background-color: #f6f6f6;
+}
+
+.about-text{
+    font-size: 18px;
+    letter-spacing: 0.5px;
+}
+
+.title{
+ margin-bottom: 50px;
+}
+.fit-image{
+ height: 100%;
+ width: 100%;
+ margin-bottom: -7px;
+}
+
+.contactDetels{
+    font-size: 20px;
+    margin-top: 10PX;
+    margin-bottom: 10PX;
+}
+
+
+footer{
+    background-color: black;  
+}
+/* Change Screen */
+@media screen and (max-width: 1200px) {
+    .hideText{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .bg-text-home{
+        font-size: 60px;
+        border: 6px solid #f1f1f1;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .bg-text-home{
+        display: none;
+    }
+    .contactDetels{
+     font-size: 17px;
+    }
+  }
+
+@media screen and (max-width: 575px) {
+    .hideing{
+        display: none;
+      }
+}
+
+.navbar {
+  /*  font-family: Montserrat, sans-serif;*/
+    margin-bottom: 0;
+    background-color: rgba(0,0,0,0.3);
+    border: 0;
+    font-size: 16px !important;
+    letter-spacing: 4px;
+}
+.navbar li a, .navbar .navbar-brand { 
+    color: #fff !important;
+}
+.navbar-nav li a:hover {
+    color: #fff !important;
+}
+.navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #29292c !important;
+}
